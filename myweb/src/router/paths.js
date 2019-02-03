@@ -1,3 +1,4 @@
+import contact from '@/views/contact'
 export default [
 
   {
@@ -8,7 +9,7 @@ export default [
     redirect: {
       path: '/404'
     }
-  },  
+  },
   {
     path: '/404',
     meta: {
@@ -80,7 +81,24 @@ export default [
       /* webpackChunkName: "routes" */
       `@/views/Media.vue`
     )
-  },  
+  },
+  {
+    path: '/contact',
+    meta: { },
+    name: 'contact',
+    props: (route) => ({ type: route.query.type }),
+    component: contact
+  },
+  {
+    path: '/work',
+    meta: { },
+    name: 'work',
+    props: (route) => ({ type: route.query.type }),
+    component: () => import(
+      /* webpackChunkName: "routes" */
+      `@/views/work.vue`
+    )
+  },
   {
     path: '/chat',
     meta: {
@@ -106,8 +124,8 @@ export default [
           default: () => import(
             /* webpackChunkName: "routes" */
             `@/components/chat/ChatMessaging.vue`
-          ),  
-        }   
+          ),
+        }
       },
       {
         path: '/chat/contact/:uuid?',
@@ -119,12 +137,12 @@ export default [
           default: () => import(
             /* webpackChunkName: "routes" */
             `@/components/chat/ChatContact.vue`
-          ),  
+          ),
 
-        }     
-      }             
+        }
+      }
     ]
-  },    
+  },
   {
     path: '/mail',
     meta: {
@@ -148,7 +166,7 @@ export default [
         component: () => import(
           /* webpackChunkName: "routes" */
           `@/components/email/List.vue`
-        ),        
+        ),
       },
       {
         path: '/mail/0/:uuid',
@@ -159,10 +177,10 @@ export default [
         component: () => import(
           /* webpackChunkName: "routes" */
           `@/components/email/Reply.vue`
-        ),        
-      }      
+        ),
+      }
     ]
-  },  
+  },
   {
     path: '/components/alert',
     meta: { breadcrumb: true },

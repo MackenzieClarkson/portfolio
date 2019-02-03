@@ -11,7 +11,7 @@
     <v-card-text class="pa-0">
       <ul class="post--list flex-list vertical">
         <li class="post--item" v-for="(item, key) in items" :key="key">
-          <a href="#" class=" post--link pa-4 layout row ma-0 text--primary">
+          <div class=" post--link pa-4 layout row ma-0 text--primary">
             <div class="post--media">
               <img :src="item.featuredImage" alt="" height="100" class="image-scale">
             </div>
@@ -20,7 +20,7 @@
                 {{item.title}}
               </h3>
               <div class="post--desc py-2 text--secondary">
-                {{ item.desc | 
+                {{ item.desc |
                   truncate({
                     length: 150
                   })
@@ -30,26 +30,14 @@
                 <div class="post--author caption grey--text text--darken-1">
                   <span>{{item.author}}</span>
                   <time class="px-2">{{item.createdAt}}</time>
+                  <a v-if="item.link" href='/aboutSite'>Learn more</a>
                 </div>
-                <div class="social">
-                  <a @click="handleThumb" class="grey--text text--darken-1">
-                    <v-icon small>thumb_up</v-icon>
-                    <small>100+</small>
-                  </a>
-                  <a @click="handleComment" class="grey--text text--darken-1 mx-3">
-                    <v-icon small>mode_comment</v-icon>
-                    <small>12+</small>
-                  </a>
-                  <a @click="handleFavorite" class="grey--text text--darken-1">
-                    <v-icon small>favorite</v-icon>
-                    <small>50+</small>
-                  </a>
-                </div>
-              </div>                    
+
+              </div>
             </div>
-          </a>
+          </div>
         </li>
-      </ul>  
+      </ul>
     </v-card-text>
   </v-card>
 </template>
@@ -104,7 +92,7 @@ export default {
 
 .image-scale:hover {
   transform: scale(1.05);
-  transition: 0.7s; 
+  transition: 0.7s;
 }
 
 </style>

@@ -17,16 +17,16 @@
         >
       </v-text-field>
       <v-spacer></v-spacer>
-      <v-btn href="mailto:mackenzie.clarkson@gmail.com">
+      <v-btn href="mailto:mackenzie.clarkson@uoit.net">
         Contact Me
       </v-btn>
-      <v-btn icon href="https://github.com/tookit/vue-material-admin">
+      <v-btn icon href="https://github.com/MackenzieClarkson">
         <v-icon>fa fa-github</v-icon>
       </v-btn>
       <v-btn icon @click="handleFullScreen()">
         <v-icon>fullscreen</v-icon>
       </v-btn>
-      
+
   </v-toolbar>
 </template>
 <script>

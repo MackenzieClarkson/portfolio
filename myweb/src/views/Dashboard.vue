@@ -1,8 +1,9 @@
 <template>
   <div>
     <div id="page-jumbotrons">
+
       <v-container grid-list-xl fluid>
-        <v-layout row wrap>
+        <v-layout v-if="!carousel" row wrap>
           <v-flex lg12>
 
               <div slot="widget-content">
@@ -16,9 +17,9 @@
                         </span>
                           <a>Learn More About my site</a>
                         <v-divider class="my-3"></v-divider>
-                        <div class="title mb-3">Do you perfer Carousels?</div>
+                        <div class="title mb-3">Do you Prefer Carousels?</div>
 
-                        <v-btn large color="primary" class="mx-0">Yes</v-btn>
+                        <v-btn v-on:click="carouselToggle()" large color="primary" class="mx-0">Yes</v-btn>
                         <br>
 
                       </v-flex>
@@ -30,104 +31,38 @@
           </v-flex>
 
         </v-layout>
+        <v-layout v-else row wrap>
+          <v-flex lg12 sm12 xs12>
+
+                <v-carousel>
+                  <v-carousel-item v-for="(item,i) in items" :src="item.src" :key="i">
+                    <v-container fill-height>
+                      <v-layout align-center>
+                        <v-flex>
+                          <h3 class="display-3">Welcome to My Portfolio Website!</h3>
+                          <span class="subheading">
+                            It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
+                          </span>
+                            <a>Learn More About my site</a>
+                          <v-divider class="my-3"></v-divider>
+                          <div class="title mb-3">Do you like Carousels?</div>
+
+                          <v-btn v-on:click="carouselToggle()" large color="primary" class="mx-0">No They're the worst!</v-btn>
+                          <br>
+
+                        </v-flex>
+                      </v-layout>
+                    </v-container>
+                  </v-carousel-item>
+                </v-carousel>
+
+          </v-flex>
+        </v-layout>
       </v-container>
     </div>
-    <v-container grid-list-xl fluid>
-      <v-layout row wrap>
-        <!-- mini statistic start -->
-        <v-flex lg3 sm6 xs12>
-          <mini-statistic
-            icon="fa fa-facebook"
-            title="100+"
-            sub-title="Likes"
-            color="indigo"
-          >
-          </mini-statistic>
-        </v-flex>
-        <v-flex lg3 sm6 xs12>
-          <mini-statistic
-            icon="fa fa-google"
-            title="150+"
-            sub-title="Connections"
-            color="red"
-          >
-          </mini-statistic>
-        </v-flex>
-        <v-flex lg3 sm6 xs12>
-          <mini-statistic
-            icon="fa fa-twitter"
-            title="200+"
-            sub-title="Followers"
-            color="light-blue"
-          >
-          </mini-statistic>
-        </v-flex>
-        <v-flex lg3 sm6 xs12>
-          <mini-statistic
-            icon="fa fa-instagram"
-            title="50+"
-            sub-title="Shots"
-            color="purple"
-          >
-          </mini-statistic>
-        </v-flex>
-        <!-- mini statistic  end -->
-        <v-flex lg8 sm12 xs12>
-          <v-widget title="Site Traffic" content-bg="white">
-            <v-btn icon slot="widget-header-action">
-              <v-icon class="text--secondary">refresh</v-icon>
-            </v-btn>
-            <div slot="widget-content">
-                <e-chart
-                :path-option="[
-                  ['dataset.source', siteTrafficData],
-                  ['color', [color.lightBlue.base, color.green.lighten1]],
-                  ['legend.show', true],
-                  ['xAxis.axisLabel.show', true],
-                  ['yAxis.axisLabel.show', true],
-                  ['grid.left', '2%'],
-                  ['grid.bottom', '5%'],
-                  ['grid.right', '3%'],
-                  ['series[0].type', 'bar'],
-                  ['series[0].areaStyle', {}],
-                  ['series[0].smooth', true],
-                  ['series[1].smooth', true],
-                  ['series[1].type', 'bar'],
-                  ['series[1].areaStyle', {}],
-                ]"
-                height="400px"
-                width="100%"
-                >
-                </e-chart>
-            </div>
-          </v-widget>
-        </v-flex>
-        <v-flex lg4 sm12 xs12>
-          <v-widget title="Top Location" content-bg="white">
-            <div slot="widget-content">
-                <e-chart
-                :path-option="[
-                  ['dataset.source', locationData],
-                  ['legend.bottom', '0'],
-                  ['color', [color.lightBlue.base, color.indigo.base, color.pink.base, color.green.base, color.cyan.base, color.teal.base]],
-                  ['xAxis.show', false],
-                  ['yAxis.show', false],
-                  ['series[0].type', 'pie'],
-                  ['series[0].avoidLabelOverlap', true],
-                  ['series[0].radius', ['50%', '70%']],
-                ]"
-                height="400px"
-                width="100%"
-                >
-                </e-chart>
-            </div>
-          </v-widget>
-        </v-flex>
+
         <!-- social/weather card start -->
-        <v-flex lg4 sm12 xs12>
-          <profile-card>
-          </profile-card>
-        </v-flex>
+
         <v-flex lg4 sm12 xs12>
           <box-chart
             card-color="indigo"
@@ -248,6 +183,12 @@ import ChatWindow from '@/components/chat/ChatWindow';
 import CircleStatistic from '@/components/widgets/statistic/CircleStatistic';
 import LinearStatistic from '@/components/widgets/statistic/LinearStatistic';
 export default {
+  methods:{
+    carouselToggle () {
+      this.carousel = !this.carousel
+      console.log("carousel toggle")
+    }
+  },
   components: {
     VWidget,
     MiniStatistic,
@@ -265,8 +206,23 @@ export default {
     PlainTableOrder
   },
   data: () => ({
+    items: [
+      {
+        src: '/static/nature/n1.jpeg'
+      },
+      {
+        src: '/static/nature/n2.jpeg'
+      },
+      {
+        src: '/static/nature/n3.jpeg'
+      },
+      {
+        src: '/static/nature/n4.jpeg'
+      }
+    ],
     color: Material,
     selectedTab: 'tab-1',
+    carousel: false,
     linearTrending: [
       {
         subheading: 'Sales',

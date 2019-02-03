@@ -9,16 +9,8 @@ const Menu =  [
   {
     title: 'My Work',
     group: 'apps',
-    icon: 'chat_bubble',
-    target: '_blank',
-    name: 'Chat',
-  },
-  {
-    title: 'Contact',
-    group: 'apps',
-    name: 'Mail',
-    target: '_blank',
-    icon: 'email',
+    icon: 'settings',
+    name: 'Work',
   },
   {
     title: 'API',
@@ -26,6 +18,13 @@ const Menu =  [
     name: 'Media',
     icon: 'perm_media',
   },
+  {
+    title: 'Contact',
+    group: 'apps',
+    name: 'contact',
+    icon: 'email',
+  },
+
   {
     title: 'Widgets',
     group: 'widgets',
