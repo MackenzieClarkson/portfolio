@@ -15,7 +15,7 @@
                         <span class="subheading">
                           It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                         </span>
-                          <a class="purple--text">Learn More About my site</a>
+                          <a href="/site" class="purple--text">Learn More About my site</a>
                         <v-divider class="my-3"></v-divider>
                         <div class="title mb-3">Do you Prefer Carousels?</div>
 
@@ -43,7 +43,7 @@
                           <span class="subheading">
                             It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                           </span>
-                            <a class="purple--text">Learn More About my site</a>
+                            <a href="/site" class="purple--text">Learn More About my site</a>
                           <v-divider class="my-3"></v-divider>
                           <div class="title mb-3">Do you like Carousels?</div>
 
@@ -68,63 +68,61 @@
 <v-layout row wrap>
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media contain src="/static/stack/logo.png">
-          <h2 class="black--text pa-3">
-            Vue JS
-          </h2>
+        <v-card-media height='400px' src="/static/stack/vue.jpeg">
+
         </v-card-media>
         <v-card-text>
 
           <div>
-            Vue Description
+            Vue.js is a front-end Javascript framework used to build powerful Single Page Applications (SPAs).
+            It is open source, and is one of the most popular and "Starred" Github repositories available.
           </div>
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
-          <v-btn flat small>Link</v-btn>
+          <v-btn href="https://github.com/vuejs/vue" flat small>Vue</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media contain src="/static/stack/vuetify.png">
-          <h2 class="black--text pa-3">
-            Vue JS
-          </h2>
+        <v-card-media contain height='400px' src="/static/stack/vuetify.png">
+
         </v-card-media>
         <v-card-text>
 
           <div>
-            Vue Description
+            Vuetify is a component library that is built on top of Google's Material Design. It uses custom html-invoked components providing an easy to read and slick front-end design. Every UI component on this website is from Vuetify.
           </div>
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
-          <v-btn flat small>Link</v-btn>
+          <v-btn href="https://github.com/vuetifyjs/vuetify" flat small>Vuetify</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
 
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media contain src="/static/stack/logo.png">
+        <v-card-media contain height='400px' src="/static/stack/vuex.png">
           <h2 class="black--text pa-3">
-            Vue JS
+            Vuex
           </h2>
         </v-card-media>
         <v-card-text>
 
           <div>
-            Vue Description
+            Vuex is a client-side persistent storage library for Vue. It is comparative to React Redux and is used to maintain session states between pages, as SPAs would normally be challenged to do so.
           </div>
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
-          <v-btn flat small>Link</v-btn>
+          <v-btn href="https://github.com/vuejs/vuex" flat small>Vuex</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
   </v-layout>
+  <v-btn href="/site" color="info" flat>See Full Stack I Use</v-btn>
 </div>
     </v-container>
   </div>

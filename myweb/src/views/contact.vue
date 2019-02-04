@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <v-container grid-list-xl fluid>
     <profile-card>
     </profile-card>
-  </div>
+  </v-container>
 </template>
 
 <script>
