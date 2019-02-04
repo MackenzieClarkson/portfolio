@@ -100,6 +100,16 @@ export default [
     )
   },
   {
+    path: '/site',
+    meta: { },
+    name: 'site',
+    props: (route) => ({ type: route.query.type }),
+    component: () => import(
+      /* webpackChunkName: "routes" */
+      `@/views/site.vue`
+    )
+  },
+  {
     path: '/chat',
     meta: {
       public: true,

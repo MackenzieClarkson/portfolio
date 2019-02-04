@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div id="page-jumbotrons">
+
 
       <v-container grid-list-xl fluid>
         <v-layout v-if="!carousel" row wrap>
           <v-flex lg12>
 
               <div slot="widget-content">
-                <v-jumbotron src="/static/nature/n2.jpeg">
+                <v-jumbotron height="600px" src="/static/nature/n2.jpeg">
                   <v-container fill-height>
                     <v-layout align-center>
                       <v-flex>
@@ -15,7 +15,7 @@
                         <span class="subheading">
                           It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                         </span>
-                          <a>Learn More About my site</a>
+                          <a class="purple--text">Learn More About my site</a>
                         <v-divider class="my-3"></v-divider>
                         <div class="title mb-3">Do you Prefer Carousels?</div>
 
@@ -34,8 +34,8 @@
         <v-layout v-else row wrap>
           <v-flex lg12 sm12 xs12>
 
-                <v-carousel>
-                  <v-carousel-item v-for="(item,i) in items" :src="item.src" :key="i">
+                <v-carousel height="600px">
+                  <v-carousel-item height="600px" v-for="(item,i) in items" :src="item.src" :key="i">
                     <v-container fill-height>
                       <v-layout align-center>
                         <v-flex>
@@ -43,7 +43,7 @@
                           <span class="subheading">
                             It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                           </span>
-                            <a>Learn More About my site</a>
+                            <a class="purple--text">Learn More About my site</a>
                           <v-divider class="my-3"></v-divider>
                           <div class="title mb-3">Do you like Carousels?</div>
 
@@ -58,109 +58,74 @@
 
           </v-flex>
         </v-layout>
-      </v-container>
-    </div>
 
-        <!-- social/weather card start -->
+<div id="pageCard" class="pt-5">
+  <div class="pb-2 title display-3">
+    <v-flex sm12>
+      <h3 class="display-2 grey--text text--darken-1">Built With</h3>
+    </v-flex>
+  </div>
+<v-layout row wrap>
+    <v-flex lg4 sm6>
+      <v-card>
+        <v-card-media contain src="/static/stack/logo.png">
+          <h2 class="black--text pa-3">
+            Vue JS
+          </h2>
+        </v-card-media>
+        <v-card-text>
 
-        <v-flex lg4 sm12 xs12>
-          <box-chart
-            card-color="indigo"
-            title="Trending"
-            sub-title="10%"
-            icon="trending_up"
-            :data="siteTrafficData"
-            :chart-color="[color.indigo.lighten1]"
-            type="line"
-          >
-          </box-chart>
-          <box-chart class="mt-4"
-            card-color="pink"
-            title="Page views"
-            sub-title="10%"
-            icon="trending_up"
-            :data="siteTrafficData"
-            :chart-color="[color.pink.darken1, 'rgba(255,255,255,0.3)']"
-            gradient
-            type="area"
-          >
-          </box-chart>
-        </v-flex>
-        <!-- statistic section -->
-        <v-flex lg4 sm12 xs12>
-          <linear-statistic
-            title="Sales"
-            sub-title="Sales increase"
-            icon="trending_up"
-            color="success"
-            :value="15"
-          >
-          </linear-statistic>
-          <linear-statistic class="my-4"
-            title="Orders"
-            sub-title="Increase"
-            icon="trending_up"
-            color="pink"
-            :value="30"
-          >
-          </linear-statistic>
-          <linear-statistic class="my-4"
-            title="Revenue"
-            sub-title="Revenue increase"
-            icon="trending_up"
-            color="primary"
-            :value="50"
-          >
-          </linear-statistic>
-          <linear-statistic class="mt-4"
-            title="Cost"
-            sub-title="Cost reduce"
-            icon="trending_down"
-            color="orange"
-            :value="25"
-          >
-          </linear-statistic>
-        </v-flex>
-        <!-- Circle statistic -->
-        <v-flex lg4 sm12 xs12 v-for="(item,index) in trending" :key="'c-trending'+index">
-          <circle-statistic
-            :title="item.subheading"
-            :sub-title="item.headline"
-            :caption="item.caption"
-            :icon="item.icon.label"
-            :color="item.linear.color"
-            :value="item.linear.value"
-          >
-          </circle-statistic>
-        </v-flex>
-        <!-- acitivity/chat widget -->
-        <v-flex lg6 sm12 xs12>
-          <chat-window height="308px"></chat-window>
-        </v-flex>
-        <v-flex lg6 sm12 xs12>
-          <v-widget title="Activities" contentBg="white">
-            <div slot="widget-content">
-              <ol class="timeline timeline-activity timeline-point-sm timeline-content-right">
-                <li class="timeline-block" v-for="(item, index) in activity" :key="index">
-                  <div class="timeline-point">
-                    <v-circle dot large :color="item.color"></v-circle>
-                  </div>
-                  <div class="timeline-content">
-                    <time datetime="2018" class="subheading">{{item.timeString}}</time>
-                    <div class="py-2 text--secondary" v-html="item.text"></div>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </v-widget>
-        </v-flex>
-        <v-flex lg7 sm12 xs12>
-          <plain-table></plain-table>
-        </v-flex>
-        <v-flex lg5 sm12 xs12>
-          <plain-table-order></plain-table-order>
-        </v-flex>
-      </v-layout>
+          <div>
+            Vue Description
+          </div>
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-actions>
+          <v-btn flat small>Link</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+    <v-flex lg4 sm6>
+      <v-card>
+        <v-card-media contain src="/static/stack/vuetify.png">
+          <h2 class="black--text pa-3">
+            Vue JS
+          </h2>
+        </v-card-media>
+        <v-card-text>
+
+          <div>
+            Vue Description
+          </div>
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-actions>
+          <v-btn flat small>Link</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+
+    <v-flex lg4 sm6>
+      <v-card>
+        <v-card-media contain src="/static/stack/logo.png">
+          <h2 class="black--text pa-3">
+            Vue JS
+          </h2>
+        </v-card-media>
+        <v-card-text>
+
+          <div>
+            Vue Description
+          </div>
+        </v-card-text>
+        <v-divider></v-divider>
+        <v-card-actions>
+          <v-btn flat small>Link</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+  </v-layout>
+</div>
     </v-container>
   </div>
 </template>
@@ -214,10 +179,10 @@ export default {
         src: '/static/nature/n2.jpeg'
       },
       {
-        src: '/static/nature/n3.jpeg'
+        src: '/static/nature/n8.jpg'
       },
       {
-        src: '/static/nature/n4.jpeg'
+        src: '/static/discover_word/ds_2.jpeg'
       }
     ],
     color: Material,

@@ -9,8 +9,9 @@ const Menu =  [
   {
     title: 'My Work',
     group: 'apps',
+    name: 'work',
     icon: 'settings',
-    name: 'Work',
+
   },
   {
     title: 'API',
@@ -24,7 +25,13 @@ const Menu =  [
     name: 'contact',
     icon: 'email',
   },
-
+  {
+    title: 'Site Stack',
+    group: 'apps',
+    name: 'site',
+    component: 'site',
+    icon: 'tune',
+  },
   {
     title: 'Widgets',
     group: 'widgets',
@@ -109,12 +116,12 @@ const Menu =  [
   },
   { divider: true },
   { header: 'Extras' },
+
   {
-    title: 'Pages',
+    title: 'Error Pages',
     group: 'extra',
     icon: 'list',
     items: [
-      { name: 'Login', title: 'Login', component: 'Login' },
       { name: '404', title: '404', component: 'NotFound' },
       { name: '403', title: '403', component: 'AccessDenied' },
       { name: '500', title: '500', component: 'ServerError' },
