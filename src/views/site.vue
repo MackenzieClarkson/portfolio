@@ -6,7 +6,7 @@
   <v-layout row wrap>
       <v-flex lg4 sm6>
         <v-card>
-          <v-card-media height='400px' src="/static/stack/vue.jpeg">
+          <v-card-media height='400px' src="portfolio/static/stack/vue.jpeg">
 
           </v-card-media>
           <v-card-text>
@@ -33,7 +33,7 @@
       </v-flex>
       <v-flex lg4 sm6>
         <v-card>
-          <v-card-media contain height='400px' src="/static/stack/vuetify.png">
+          <v-card-media contain height='400px' src="portfolio/static/stack/vuetify.png">
 
           </v-card-media>
           <v-card-text>
@@ -60,7 +60,7 @@
 
       <v-flex lg4 sm6>
         <v-card>
-          <v-card-media contain height='400px' src="/static/stack/vuex.png">
+          <v-card-media contain height='400px' src="portfolio/static/stack/vuex.png">
             <h2 class="black--text pa-3">
               Vuex
             </h2>
@@ -93,7 +93,7 @@
       </v-flex>
       <v-flex lg4 sm6>
         <v-card>
-          <v-card-media contain height='400px' src="/static/stack/node.png">
+          <v-card-media contain height='400px' src="portfolio/static/stack/node.png">
             <h2 class="black--text pa-3">
               Node & Express
             </h2>
@@ -122,7 +122,7 @@
       </v-flex>
       <v-flex lg4 sm6>
         <v-card>
-          <v-card-media contain height='400px' src="/static/stack/graphql.png">
+          <v-card-media contain height='400px' src="portfolio/static/stack/graphql.png">
             <h2 class="black--text pa-3">
               GraphQL
             </h2>
@@ -148,7 +148,7 @@
       </v-flex>
       <v-flex lg4 sm6>
         <v-card>
-          <v-card-media contain height='400px' src="/static/stack/sequelize.svg">
+          <v-card-media contain height='400px' src="portfolio/static/stack/sequelize.svg">
             <h2 class="black--text pa-3">
               Sequelize & MySQL
             </h2>
