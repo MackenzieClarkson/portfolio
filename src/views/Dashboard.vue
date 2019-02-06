@@ -11,7 +11,7 @@
                   <v-container fill-height>
                     <v-layout align-center>
                       <v-flex>
-                        <h3 class="display-3">Welcome to My Portfolio Website!</h3>
+                        <h3 class="display-3">Welcome to My Portfolio Website!!</h3>
                         <span class="subheading">
                           It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                         </span>
