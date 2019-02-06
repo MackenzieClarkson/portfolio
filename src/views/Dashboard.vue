@@ -3,16 +3,15 @@
 
 
       <v-container grid-list-xl fluid>
-        Welcome to My Portfolio Website!!
         <v-layout v-if="!carousel" row wrap>
           <v-flex lg12>
 
               <div slot="widget-content">
-                <v-jumbotron height="600px" src="./static/nature/n2.jpeg">
+                <v-jumbotron height="600px" src="static/nature/n2.jpeg">
                   <v-container fill-height>
                     <v-layout align-center>
                       <v-flex>
-                        <h3 class="display-3">Welcome to My Portfolio Website!!</h3>
+                        <h3 class="display-3">Welcome to My Portfolio Website!</h3>
                         <span class="subheading">
                           It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                         </span>
@@ -87,7 +86,7 @@
     </v-flex>
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media contain height='400px' src="/portfolio/static/stack/vuetify.png">
+        <v-card-media contain height='400px' src="static/stack/vuetify.png">
 
         </v-card-media>
         <v-card-text>
@@ -105,7 +104,7 @@
 
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media contain height='400px' src="portfolio/static/stack/vuex.png">
+        <v-card-media contain height='400px' src="static/stack/vuex.png">
           <h2 class="black--text pa-3">
             Vuex
           </h2>
@@ -172,16 +171,16 @@ export default {
   data: () => ({
     items: [
       {
-        src: 'portfolio/static/nature/n1.jpeg'
+        src: 'static/nature/n1.jpeg'
       },
       {
-        src: 'portfolio/static/nature/n2.jpeg'
+        src: 'static/nature/n2.jpeg'
       },
       {
-        src: 'portfolio/static/nature/n8.jpg'
+        src: 'static/nature/n8.jpg'
       },
       {
-        src: 'portfolio/static/discover_word/ds_2.jpeg'
+        src: 'static/discover_word/ds_2.jpeg'
       }
     ],
     color: Material,
