@@ -7,7 +7,7 @@
           <v-flex lg12>
 
               <div slot="widget-content">
-                <v-jumbotron height="600px" src="portfolio/static/nature/n2.jpeg">
+                <v-jumbotron height="600px" src="./static/nature/n2.jpeg">
                   <v-container fill-height>
                     <v-layout align-center>
                       <v-flex>
@@ -68,7 +68,7 @@
 <v-layout row wrap>
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media height='400px' src="portfolio/static/stack/vue.jpeg">
+        <v-card-media height='400px' src="static/stack/vue.jpeg">
 
         </v-card-media>
         <v-card-text>
@@ -86,7 +86,7 @@
     </v-flex>
     <v-flex lg4 sm6>
       <v-card>
-        <v-card-media contain height='400px' src="portfolio/static/stack/vuetify.png">
+        <v-card-media contain height='400px' src="/portfolio/static/stack/vuetify.png">
 
         </v-card-media>
         <v-card-text>
