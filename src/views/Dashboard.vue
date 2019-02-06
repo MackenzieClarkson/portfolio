@@ -15,7 +15,7 @@
                         <span class="subheading">
                           It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                         </span>
-                          <a href="/#/site" class="purple--text">Learn More About my site</a>
+                          <a href="#/site" class="purple--text">Learn More About my site</a>
                         <v-divider class="my-3"></v-divider>
                         <div class="title mb-3">Do you Prefer Carousels?</div>
 
@@ -43,7 +43,7 @@
                           <span class="subheading">
                             It is built using Vue.js (Front-end Framework) and Vuetify (Styling framework built on Google's Material UI!)
                           </span>
-                            <a href="/#/site" class="purple--text">Learn More About my site</a>
+                            <a href="#/site" class="purple--text">Learn More About my site</a>
                           <v-divider class="my-3"></v-divider>
                           <div class="title mb-3">Do you like Carousels?</div>
 
@@ -122,7 +122,7 @@
       </v-card>
     </v-flex>
   </v-layout>
-  <v-btn href="/#/site" color="info" flat>See Full Stack I Use</v-btn>
+  <v-btn href="#/site" color="info" flat>See Full Stack I Use</v-btn>
 </div>
     </v-container>
   </div>
