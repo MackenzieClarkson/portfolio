@@ -15,7 +15,13 @@ const Menu =  [
     component: 'site',
     icon: 'tune',
   },
-
+  {
+    title: 'Projects',
+    group: 'apps',
+    name: 'work',
+    component: 'work',
+    icon: 'folder',
+  },
     {
       title: 'Contact',
       group: 'apps',

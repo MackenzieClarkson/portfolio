@@ -1,10 +1,10 @@
 import contact from '@/views/contact'
 import notfound from '@/views/NotFound'
-import site from '@/views/site'
 import deny from '@/views/Deny'
-import error from '@/views/Error'
-import work from '@/views/work'
-import dash from '@/views/Dashboard'
+import error from '@/views/Error.vue'
+import dash from '@/views/Dashboard.vue'
+import site from '@/views/site.vue'
+import work from '@/views/work.vue'
 export default [
 
   {
@@ -40,6 +40,7 @@ export default [
     name: 'ServerError',
     component: error
   },
+
   {
     path: '/',
     meta: { },
@@ -54,7 +55,6 @@ export default [
     name: 'Dashboard',
     component: dash
   },
-
 
   {
     path: '/contact',
@@ -76,7 +76,5 @@ export default [
     name: 'site',
     props: (route) => ({ type: route.query.type }),
     component: site
-    
   },
-
 ];

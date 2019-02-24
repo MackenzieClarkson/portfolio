@@ -1,11 +1,11 @@
 const projects =  [
   {
     title: 'Portfolio Website',
-    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry scrambled it to make text of the printing and typesetting industry scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.`,
-    featuredImage: '/static/discover_word/thumb/ds_1.jpg',
+    desc: `You're on it! A modern SPA built with Vue and Vuetify. `,
+    featuredImage: '/static/stack/vue.jpeg',
     author: 'Mackenzie Clarkson',
     createdAt: '02/03/2019',
-    link: '/aboutSite'
+    link: '#/site'
   },
   {
     title: 'Computer Vision Application',
@@ -14,16 +14,19 @@ const projects =  [
     This app was a challenge in optmization as it is key to be able to run on top of a live video feed input.
     If the algorithm is too slow it would not be able to catch up to the frames a live feed provides. Two versions were made:
     one using open source libraries such as OPENCV and one without help (other than numpy).`,
-    featuredImage: '/static/discover_word/thumb/ds_2.jpg',
+    featuredImage: '/static/stack/motion.gif',
     author: 'Mackenzie Clarkson',
-    createdAt: '04/01/2017'
+    createdAt: '04/01/2017',
+    link: 'https://github.com/MackenzieClarkson/Motion-Detection--No-OpenCV-'
   },
   {
-    title: 'A sample post with image',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry scrambled it to make text of the printing and typesetting industry scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.',
-    featuredImage: '/static/discover_word/thumb/ds_3.jpg',
-    author: 'Jim Wang',
-    createdAt: new Date().toLocaleDateString()
+    title: 'TaskFlow',
+    desc: `Several Apps in one, TaskFlow is a workflow library I work on for IBM. Used by hundreds of users internally, it automates many tasks including clocking in,
+    relevant data updates, posting and realtime updating of tasks for team collaboration. Also used by management for metrics like Inventory, shipping status, cancellations
+    costs, and project management e.x resource allocation by project or client. My contribution was to rebuild this App from the ground up using a contemporary stack (From PHP based to Node/Vue/GraphQL)
+    while also implementing the new design standards and the new CSS and HTML template from IBM. This App is internal and therefore private :(`,
+    featuredImage: '/static/stack/ibm.png',
+    author: 'CSCI Team @ IBM'
   },
 
 ];

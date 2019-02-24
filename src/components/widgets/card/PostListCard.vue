@@ -1,19 +1,24 @@
 <template>
   <v-card class="post-card">
     <v-toolbar color="transparent" flat dense card>
-      <v-toolbar-title class="subheading ft-200">Recent Posts</v-toolbar-title>
+      <v-toolbar-title class="subheading ft-200">
+        Projects
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon class="text--secondary">more_vert</v-icon>
+        <v-icon class="text--secondary">
+          more_vert
+        </v-icon>
       </v-btn>
     </v-toolbar>
-    <v-divider></v-divider>
+    <v-divider>
+    </v-divider>
     <v-card-text class="pa-0">
       <ul class="post--list flex-list vertical">
         <li class="post--item" v-for="(item, key) in items" :key="key">
           <div class=" post--link pa-4 layout row ma-0 text--primary">
             <div class="post--media">
-              <img :src="item.featuredImage" alt="" height="100" class="image-scale">
+              <img :src="item.featuredImage" alt="" width="180" height="100" class="image-scale">
             </div>
             <div class="post--content ml-3">
               <h3 class="title post--title">
@@ -28,9 +33,15 @@
               </div>
               <div class="post--meta o-flex justify-space-between">
                 <div class="post--author caption grey--text text--darken-1">
-                  <span>{{item.author}}</span>
-                  <time class="px-2">{{item.createdAt}}</time>
-                  <a v-if="item.link" href='/aboutSite'>Learn more</a>
+                  <span>
+                    {{item.author}}
+                  </span>
+                  <time class="px-2">
+                    {{item.createdAt}}
+                  </time>
+                  <a v-if="item.link" :href='item.link'>
+                    Learn more
+                  </a>
                 </div>
 
               </div>

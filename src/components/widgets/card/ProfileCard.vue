@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-img src="/static/creative_process/09.jpeg" height="390">
+    <v-img src="static/creative_process/09.jpeg" height="390">
       <v-layout column class="media ma-0">
         <v-card-title>
 
