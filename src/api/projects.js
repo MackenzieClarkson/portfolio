@@ -8,6 +8,15 @@ const projects =  [
     link: '#/site'
   },
   {
+    title: 'Space Tracker',
+    desc: `Space Object tracker and astronomy images/logs from NASA API. Made with React, bootstrap and NASA's public API.
+    Automated API calls retrieve up-to-date images and asteroids currently in proximity.`,
+    featuredImage: '/portfolio/static/stack/nasa.png',
+    author: 'Mackenzie Clarkson',
+    createdAt: '03/03/2019',
+    link: 'https://mackenzieclarkson.github.io/spaceTracker'
+  },
+  {
     title: 'Computer Vision Application',
     desc: `Primary feature of my CV App is for object motion localization for application in security.
     The app encases objects in boxes using floodfill algorithms to assure each single object is in one box.
