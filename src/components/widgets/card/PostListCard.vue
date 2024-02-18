@@ -5,11 +5,6 @@
         Projects
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon class="text--secondary">
-          more_vert
-        </v-icon>
-      </v-btn>
     </v-toolbar>
     <v-divider>
     </v-divider>

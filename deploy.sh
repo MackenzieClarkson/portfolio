@@ -2,7 +2,7 @@
 
 # abort on errors
 set -e
-
+NODE_OPTIONS="--openssl-legacy-provider"
 # build
 yarn run build
 

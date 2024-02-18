@@ -1,5 +1,13 @@
 const projects =  [
   {
+    title: 'Rust Powered Gaming Aggregate',
+    desc: `Hobby project using rust to compile and store data from various sources for analysis regarding World of Warcraft PvP. `,
+    featuredImage: '/portfolio/static/stack/rust-tutorial.png',
+    author: 'Mackenzie Clarkson',
+    createdAt: '03/03/2024',
+    link: 'https://rating-inflation.io'
+  },
+  {
     title: 'Portfolio Website',
     desc: `You're on it! A modern SPA built with Vue and Vuetify. `,
     featuredImage: '/portfolio/static/stack/vue.jpeg',
