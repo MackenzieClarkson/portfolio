@@ -2,7 +2,7 @@
   <v-card class="post-card">
     <v-toolbar color="transparent" flat dense card>
       <v-toolbar-title class="subheading ft-200">
-        Projects
+        {{ title }}
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
@@ -52,6 +52,7 @@
 export default {
   props: {
     items: { type: [Array, Object] },
+    title: {type: String }
   },
 
   methods: {

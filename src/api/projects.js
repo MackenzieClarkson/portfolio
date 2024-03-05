@@ -1,4 +1,4 @@
-const projects =  [
+const personalProjects =  [
   {
     title: 'Rust Powered Gaming Aggregate',
     desc: `Hobby project using rust to compile and store data from various sources for analysis regarding World of Warcraft PvP. `,
@@ -36,6 +36,36 @@ const projects =  [
     createdAt: '04/01/2017',
     link: 'https://github.com/MackenzieClarkson/Motion-Detection--No-OpenCV-'
   },
+];
+const workProjects =  [
+  {
+    title: 'Care1 Patient Management System',
+    desc: `Primarily using a MySQL, React (Typescript), Django (Python), Docker stack to deliver production web applications to our telemedicine clients. 
+      Alongside a great team, we produced an application that passed Quebec government standards in telemedicine to allow for business there. `,
+    featuredImage: '/portfolio/static/stack/care1.png',
+    author: 'Mackenzie Clarkson',
+  },
+  {
+    title: 'Avocado',
+    desc: `Maintained a revenue generating application on my own, a contact lens ordering platform for professionals. 
+    This application is based around web scraping, I cut its run time down by 75% using concurrency principles.
+     I was also able to increase the data retrieval volume by 75% allowing our data to be marketed as up-to-date. 
+    `,
+    featuredImage: '/portfolio/static/stack/avocado.png',
+    author: 'Mackenzie Clarkson',
+  },
+  {
+    title: 'Riipen',
+    desc: `Used a full Javascript Stack (React, Node.js) to develop a social networking platform to connect students, employers, and professors.`,
+    featuredImage: '/portfolio/static/stack/riipen.jpg',
+    author: 'Mackenzie Clarkson',
+  },
+  {
+    title: 'Riipen Integration Platform',
+    desc: `Application for interfacing with webhooks and integrations with other services such as Zapier. Provided API keys, docs, webhook listening`,
+    featuredImage: '/portfolio/static/stack/zapier.jpg',
+    author: 'Mackenzie Clarkson',
+  },
   {
     title: 'TaskFlow',
     desc: `Several Apps in one, TaskFlow is a workflow library I work on for IBM. Used by hundreds of users internally, it automates many tasks including clocking in,
@@ -47,11 +77,15 @@ const projects =  [
   },
 
 ];
+const getPersonalProjects = (limit) => {
+  return (limit) ? personalProjects.slice(0, limit) : personalProjects;
+};
 
-const getProjects = (limit) => {
-  return (limit) ? projects.slice(0, limit) : projects;
+const getWorkProjects = (limit) => {
+  return (limit) ? workProjects.slice(0, limit) : workProjects;
 };
 
 export {
-  getProjects
+  getPersonalProjects,
+  getWorkProjects
 };

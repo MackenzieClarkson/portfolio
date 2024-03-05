@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "446b77abdf8a955762c6",
-    "url": "/portfolio/css/app.5df3c788.css"
+    "revision": "a756543e97c22990a524",
+    "url": "/portfolio/css/app.379b9972.css"
   },
   {
-    "revision": "446b77abdf8a955762c6",
-    "url": "/portfolio/js/app.a5fc228e.js"
+    "revision": "a756543e97c22990a524",
+    "url": "/portfolio/js/app.2c23c8e6.js"
   },
   {
     "revision": "eb8cffe806fc72983351",
@@ -16,28 +16,24 @@ self.__precacheManifest = [
     "url": "/portfolio/js/chunk-vendors.109a2b91.js"
   },
   {
-    "revision": "912ec66d7572ff821749319396470bde",
-    "url": "/portfolio/img/fontawesome-webfont.912ec66d.svg"
-  },
-  {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/portfolio/fonts/fontawesome-webfont.674f50d2.eot"
-  },
-  {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "/portfolio/fonts/fontawesome-webfont.fee66e71.woff"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/portfolio/fonts/fontawesome-webfont.af7ae505.woff2"
   },
   {
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "/portfolio/fonts/fontawesome-webfont.fee66e71.woff"
+  },
+  {
     "revision": "b06871f281fee6b241d60582ae9369b9",
     "url": "/portfolio/fonts/fontawesome-webfont.b06871f2.ttf"
   },
   {
-    "revision": "d26871e8149b5759f814fd3c7a4f784b",
-    "url": "/portfolio/fonts/Roboto-Light.d26871e8.woff2"
+    "revision": "912ec66d7572ff821749319396470bde",
+    "url": "/portfolio/img/fontawesome-webfont.912ec66d.svg"
   },
   {
     "revision": "ad538a69b0e8615ed0419c4529344ffc",
@@ -48,40 +44,52 @@ self.__precacheManifest = [
     "url": "/portfolio/fonts/Roboto-ThinItalic.5b4a33e1.woff2"
   },
   {
+    "revision": "d3b47375afd904983d9be8d6e239a949",
+    "url": "/portfolio/fonts/Roboto-Thin.d3b47375.woff"
+  },
+  {
     "revision": "8a96edbbcd9a6991d79371aed0b0288e",
     "url": "/portfolio/fonts/Roboto-ThinItalic.8a96edbb.woff"
   },
   {
-    "revision": "73f0a88bbca1bec19fb1303c689d04c6",
-    "url": "/portfolio/fonts/Roboto-Regular.73f0a88b.woff2"
+    "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
+    "url": "/portfolio/fonts/Roboto-Bold.b52fac2b.woff2"
   },
   {
-    "revision": "d3b47375afd904983d9be8d6e239a949",
-    "url": "/portfolio/fonts/Roboto-Thin.d3b47375.woff"
+    "revision": "d26871e8149b5759f814fd3c7a4f784b",
+    "url": "/portfolio/fonts/Roboto-Light.d26871e8.woff2"
   },
   {
     "revision": "c73eb1ceba3321a80a0aff13ad373cb4",
     "url": "/portfolio/fonts/Roboto-Light.c73eb1ce.woff"
   },
   {
+    "revision": "e8eaae902c3a4dacb9a5062667e10576",
+    "url": "/portfolio/fonts/Roboto-LightItalic.e8eaae90.woff2"
+  },
+  {
     "revision": "13efe6cbc10b97144a28310ebdeda594",
     "url": "/portfolio/fonts/Roboto-LightItalic.13efe6cb.woff"
   },
   {
-    "revision": "35b07eb2f8711ae08d1f58c043880930",
-    "url": "/portfolio/fonts/Roboto-Regular.35b07eb2.woff"
+    "revision": "73f0a88bbca1bec19fb1303c689d04c6",
+    "url": "/portfolio/fonts/Roboto-Regular.73f0a88b.woff2"
   },
   {
     "revision": "4357beb823a5f8d65c260f045d9e019a",
     "url": "/portfolio/fonts/Roboto-RegularItalic.4357beb8.woff2"
   },
   {
+    "revision": "35b07eb2f8711ae08d1f58c043880930",
+    "url": "/portfolio/fonts/Roboto-Regular.35b07eb2.woff"
+  },
+  {
     "revision": "f5902d5ef961717ed263902fc429e6ae",
     "url": "/portfolio/fonts/Roboto-RegularItalic.f5902d5e.woff"
   },
   {
-    "revision": "e8eaae902c3a4dacb9a5062667e10576",
-    "url": "/portfolio/fonts/Roboto-LightItalic.e8eaae90.woff2"
+    "revision": "13ec0eb5bdb821ff4930237d7c9f943f",
+    "url": "/portfolio/fonts/Roboto-MediumItalic.13ec0eb5.woff2"
   },
   {
     "revision": "90d1676003d9c28c04994c18bfd8b558",
@@ -92,28 +100,20 @@ self.__precacheManifest = [
     "url": "/portfolio/fonts/Roboto-Medium.1d659482.woff"
   },
   {
-    "revision": "13ec0eb5bdb821ff4930237d7c9f943f",
-    "url": "/portfolio/fonts/Roboto-MediumItalic.13ec0eb5.woff2"
-  },
-  {
     "revision": "83e114c316fcc3f23f524ec3e1c65984",
     "url": "/portfolio/fonts/Roboto-MediumItalic.83e114c3.woff"
-  },
-  {
-    "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
-    "url": "/portfolio/fonts/Roboto-Bold.b52fac2b.woff2"
   },
   {
     "revision": "50d75e48e0a3ddab1dd15d6bfb9d3700",
     "url": "/portfolio/fonts/Roboto-Bold.50d75e48.woff"
   },
   {
-    "revision": "4fe0f73cc919ba2b7a3c36e4540d725c",
-    "url": "/portfolio/fonts/Roboto-BoldItalic.4fe0f73c.woff"
-  },
-  {
     "revision": "94008e69aaf05da75c0bbf8f8bb0db41",
     "url": "/portfolio/fonts/Roboto-BoldItalic.94008e69.woff2"
+  },
+  {
+    "revision": "4fe0f73cc919ba2b7a3c36e4540d725c",
+    "url": "/portfolio/fonts/Roboto-BoldItalic.4fe0f73c.woff"
   },
   {
     "revision": "59eb3601394dd87f30f82433fb39dd94",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/portfolio/fonts/Roboto-BlackItalic.cc2fadc3.woff"
   },
   {
-    "revision": "4aca78793eb56fee4374c1c4ff218024",
+    "revision": "dc1bdd6f636262f84ef9d3a3963ea7ad",
     "url": "/portfolio/index.html"
   },
   {
@@ -140,12 +140,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/_gitkeep"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/portfolio/robots.txt"
-  },
-  {
     "revision": "4265860c0df3fdbf820366ed3ee33783",
     "url": "/portfolio/static/creative_process/09.jpeg"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/portfolio/robots.txt"
   },
   {
     "revision": "f7cfcc63cff276584981027c8fa7b22c",
@@ -156,20 +156,16 @@ self.__precacheManifest = [
     "url": "/portfolio/static/error/403.svg"
   },
   {
-    "revision": "9ed13bbe02debb8e23db19a4e6603c2e",
-    "url": "/portfolio/static/error/404.svg"
-  },
-  {
     "revision": "990ae4d0c56d16d2ffdab6d924b6a179",
     "url": "/portfolio/static/error/500.svg"
   },
   {
-    "revision": "99f89f51c566a334b7a74659c1e24e28",
-    "url": "/portfolio/static/nature/n1.jpeg"
-  },
-  {
     "revision": "695a31606b1abb167b03fb1f6375831d",
     "url": "/portfolio/static/google.svg"
+  },
+  {
+    "revision": "9ed13bbe02debb8e23db19a4e6603c2e",
+    "url": "/portfolio/static/error/404.svg"
   },
   {
     "revision": "1140edad4415593aa32c8e4546be1fb4",
@@ -200,32 +196,40 @@ self.__precacheManifest = [
     "url": "/portfolio/static/m.svg"
   },
   {
-    "revision": "50d8a018e8ae96732c8a2ba663c61d4e",
-    "url": "/portfolio/static/robots.txt"
-  },
-  {
-    "revision": "53b7e330f9bb9e2b6c83e263881d30be",
-    "url": "/portfolio/static/stack/ibm.png"
-  },
-  {
-    "revision": "973a42b795968c5101d3fb1a58f04dc0",
-    "url": "/portfolio/static/nature/n3.jpeg"
+    "revision": "99f89f51c566a334b7a74659c1e24e28",
+    "url": "/portfolio/static/nature/n1.jpeg"
   },
   {
     "revision": "813319ea4e52788e97fc76b23b20e45a",
     "url": "/portfolio/static/nature/n2.jpeg"
   },
   {
+    "revision": "973a42b795968c5101d3fb1a58f04dc0",
+    "url": "/portfolio/static/nature/n3.jpeg"
+  },
+  {
     "revision": "3d50c6a6884f65fd5878059be337a824",
     "url": "/portfolio/static/nature/n8.jpg"
+  },
+  {
+    "revision": "50d8a018e8ae96732c8a2ba663c61d4e",
+    "url": "/portfolio/static/robots.txt"
+  },
+  {
+    "revision": "db25ec8867fe5fc2e9dd1b08764ed165",
+    "url": "/portfolio/static/stack/avocado.png"
+  },
+  {
+    "revision": "9bc0884b6ccfee46a32080db9e1b7a55",
+    "url": "/portfolio/static/stack/django.png"
   },
   {
     "revision": "ce75ca74185dff646add49f61423e22e",
     "url": "/portfolio/static/stack/index.html"
   },
   {
-    "revision": "9bc0884b6ccfee46a32080db9e1b7a55",
-    "url": "/portfolio/static/stack/django.png"
+    "revision": "53b7e330f9bb9e2b6c83e263881d30be",
+    "url": "/portfolio/static/stack/ibm.png"
   },
   {
     "revision": "762edb84b0bf808c1746d10188ebf04a",
@@ -240,27 +244,43 @@ self.__precacheManifest = [
     "url": "/portfolio/static/stack/nasa.png"
   },
   {
+    "revision": "270f55fffea36219b66a63fbe03ff497",
+    "url": "/portfolio/static/stack/node.png"
+  },
+  {
     "url": "/portfolio/static/stack/precache-manifest.a10fe677d6a533703f2aefa311e90700.js"
-  },
-  {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/portfolio/static/stack/robots.txt"
-  },
-  {
-    "revision": "43c9d125de48e59cb29a88dd1b20bc46",
-    "url": "/portfolio/static/stack/sequelize.svg"
   },
   {
     "revision": "127b470a1814ca2ae06d9f40df34f190",
     "url": "/portfolio/static/stack/React.png"
   },
   {
-    "revision": "270f55fffea36219b66a63fbe03ff497",
-    "url": "/portfolio/static/stack/node.png"
+    "revision": "50af2d42347ab281d97a0f02e4124acf",
+    "url": "/portfolio/static/stack/riipen.jpg"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/portfolio/static/stack/robots.txt"
+  },
+  {
+    "revision": "b44e868d18055ad36d3476ad989f6f0b",
+    "url": "/portfolio/static/stack/rust-tutorial.jpg"
+  },
+  {
+    "revision": "5c7d0b78dec9ab495e744aa157789aaf",
+    "url": "/portfolio/static/stack/rust-tutorial.png"
+  },
+  {
+    "revision": "5c7d0b78dec9ab495e744aa157789aaf",
+    "url": "/portfolio/static/stack/rust-tutorial.png.png"
   },
   {
     "revision": "af2ed98b5519d0fddbe6dfeb6522876c",
     "url": "/portfolio/static/stack/sequelize.jpg"
+  },
+  {
+    "revision": "43c9d125de48e59cb29a88dd1b20bc46",
+    "url": "/portfolio/static/stack/sequelize.svg"
   },
   {
     "revision": "ef914ad57abd0964f713269ff5e86705",
@@ -271,24 +291,28 @@ self.__precacheManifest = [
     "url": "/portfolio/static/stack/vu1.png"
   },
   {
-    "revision": "0292f39a5431a362056357ca62d356e6",
-    "url": "/portfolio/static/stack/vue.jpeg"
-  },
-  {
     "revision": "df20e37f04ed6eb396fd14785a631851",
     "url": "/portfolio/static/stack/vuetify.jpeg"
+  },
+  {
+    "revision": "0292f39a5431a362056357ca62d356e6",
+    "url": "/portfolio/static/stack/vue.jpeg"
   },
   {
     "revision": "410cf04d7397fc8020ace6f483fcf9be",
     "url": "/portfolio/static/stack/vuetify.png"
   },
   {
-    "revision": "5c7d0b78dec9ab495e744aa157789aaf",
-    "url": "/portfolio/static/stack/rust-tutorial.png"
-  },
-  {
     "revision": "983ea11f68f23d6a3229e13eafea6dc7",
     "url": "/portfolio/static/stack/vuex.png"
+  },
+  {
+    "revision": "a59f6241d9d6a55dc5e5b372b97b4d46",
+    "url": "/portfolio/static/stack/zapier.jpg"
+  },
+  {
+    "revision": "86a058234d61c6bbe251f7a623fa0e1e",
+    "url": "/portfolio/static/stack/care1.png"
   },
   {
     "revision": "fc245501d65261d609a6dc1eada56679",

@@ -50,7 +50,6 @@
                 Work Experience: 4 Years
               </span>
             </div>
-            </div>
           </v-card-text>
           <v-divider></v-divider>
           <v-card-actions>
